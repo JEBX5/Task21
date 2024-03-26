@@ -46,7 +46,7 @@ clean_df = df.dropna(subset=['reviews.text'])
 
 # Number of reviews to be analysed = count. 
 # Uncomment statement below and remove 100 value to allow for a user input
-count = 100 #int(input("How many Amazon reviews would you like to sample this program on?"))
+count = int(input("How many Amazon reviews would you like to sample this program on?"))
 
 # Extract first {count} non blank reviews:
 reviews_data = clean_df['reviews.text'][:count]
